@@ -1,0 +1,481 @@
+# ------------------------------------------------------ NORMAL SYSTEMS SYSTEMS ---------
+
+#NORMAL SYSTEM WITH MANY SMALL PLANETS
+norm_1 = {
+    name = "NORM 5"
+    class = "RADOM_NORMAL"
+    flags = {shard}
+    usage = misc_system_init
+    usage_odds = 5
+    planet = {
+        class = star
+        orbit_distance = 0
+    }
+    planet = {
+        count = 1
+        name = ""
+        class = star
+        orbit_distance = 10
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 3 max = 8}
+    }
+    planet = {
+        count = {min = 5 max = 14}
+        name = ""
+        class = star
+        orbit_distance = {min = 3 max = 7}
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 3 max = 8}
+    }
+}
+
+# ------------------------------------------------------ BINARY SYSTEMS ---------
+#BINARY SYSTEM WITH 1 TO 5 PLANETS
+binary_1 = {
+    name = "Binary 1"
+    class = "RADOM_NORMAL"
+    asteroids_distance = {min = 40 max = 60}
+    flags = {binary}
+    usage = misc_system_init
+    usage_odds = 20
+    planet = {
+        class = star
+        orbit_distance = {min = 15 max = 20}
+    }
+    planet = {
+        class = star
+        orbit_distance = 0
+        orbit_angle = 180
+    }
+    planet = {
+        count = {min = 1 max = 5}
+        name = ""
+        class = star
+        orbit_distance = {min = 5 max = 15}
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 12 max = 25}
+        moon = {
+            count = {min = 0 max = 1}
+            class = star
+            orbit_distance = {min = 4 max = 6}
+            orbit_angle = {min = 0 max = 360}
+            size = {min = 3 max = 10}
+            
+        }
+    }
+}
+
+#BINARY SYSTEM WITH 1 TO 5 ASTEROIDS AND 1 TO 3 PLANETS
+binary_2 = {
+    name = "Binary 2"
+    class = "RADOM_NORMAL"
+    asteroids_distance = 20
+    flags = {binary}
+    usage = misc_system_init
+    usage_odds = 20
+    planet = {
+        class = star
+        orbit_distance = {min = 15 max = 20}
+    }
+    planet = {
+        class = star
+        orbit_distance = 0
+        orbit_angle = 180
+    }
+    planet = {
+        count = 1
+        name = ""
+        class = random_asteroid
+        orbit_distance = 20
+        orbit_angle = {min = 0 max = 360}
+        size = 1
+    }
+    planet = {
+        count = {min = 0 max = 4}
+        name = ""
+        class = random_asteroid
+        orbit_distance = 0
+        orbit_angle = {min = 0 max = 360}
+        size = 1
+    }
+    
+    planet = {
+        count = {min = 1 max = 3}
+        name = ""
+        class = star
+        orbit_distance = {min = 10 max = 20}
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 14 max = 25}
+        moon = {
+            count = {min = 0 max = 2}
+            class = star
+            orbit_distance = {min = 4 max = 6}
+            orbit_angle = {min = 0 max = 360}
+            size = {min = 3 max = 11}
+        }
+    }
+}
+
+#BINARY SYSTEM WITH 1 TO 4 GAS GIANTS WITH 1 TO 5 MOONS AND 0 TO 2 PLANETS
+binary_3 = {
+    name = "Binary 3"
+    class = "RADOM_NORMAL"
+    asteroids_distance = {min = 70 max = 90}
+    flags = {binary}
+    usage = misc_system_init
+    usage_odds = 20
+    planet = {
+        class = star
+        orbit_distance = {min = 15 max = 20}
+    }
+    planet = {
+        class = star
+        orbit_distance = 0
+        orbit_angle = 180
+    }
+    planet = {
+        count = {min = 1 max = 4}
+        name = ""
+        class = GAS_GIANT
+        orbit_distance = {min = 15 max = 25}
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 25 max = 40}
+        moon = {
+            count = {min = 1 max = 5}
+            class = star
+            orbit_distance = {min = 4 max = 6}
+            orbit_angle = {min = 0 max = 360}
+            size = {min = 12 max = 20}
+        }
+    }
+    planet = {
+        count = {min = 0 max = 2}
+        name = ""
+        class = star
+        orbit_distance = {min = 10 max = 20}
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 14 max = 25}
+    }
+}
+
+#BINARY SYSTEM WITH A LARGE HABITABLE PLANET IN THE MIDDLE AND SMALL PLANETS AROUND EACH STAR
+binary_4 = {
+    name = "Binary 4"
+    class = "RADOM_NORMAL"
+    asteroids_distance = {min = 30 max = 35}
+    flags = {binary}
+    usage = misc_system_init
+    usage_odds = 10
+    planet = {
+        count = 0
+        name = ""
+        class = random_habitable
+        has_ring = yes
+        orbit_distance = 0
+        orbit_angle = 0
+        size = 30
+    }
+    planet = {
+        class = star
+        orbit_distance = {min = 35 max = 40}
+        moon = {
+            count = {min = 0 max = 3}
+            class = star
+            orbit_distance = {min = 5 max = 10}
+            orbit_angle = {min = 0 max = 360}
+            size = {min = 6 max = 15}
+        }
+    }
+    planet = {
+        class = star
+        orbit_distance = 0
+        orbit_angle = 180
+        moon = {
+            count = {min = 0 max = 3}
+            class = star
+            orbit_distance = {min = 5 max = 10}
+            orbit_angle = {min = 0 max = 360}
+            size = {min = 6 max = 15}
+        }
+    }
+}
+
+#BINARY SYSTEM WITH A LARGE NUMBER OF SMALL PLANETS
+binary_5 = {
+    name = "Binary 5"
+    class = "RADOM_NORMAL"
+    flags = {binary, shard}
+    usage = misc_system_init
+    usage_odds = 5
+    planet = {
+        class = star
+        orbit_distance = {min = 15 max = 20}
+    }
+    planet = {
+        class = star
+        orbit_distance = 0
+        orbit_angle = 180
+    }
+    planet = {
+        count = 1
+        name = ""
+        class = star
+        orbit_distance = 10
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 3 max = 8}
+    }
+    planet = {
+        count = {min = 5 max = 14}
+        name = ""
+        class = star
+        orbit_distance = {min = 3 max = 7}
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 3 max = 8}
+    }
+}
+
+#BINARY SYSTEM WTIH SOME PLANETS AND SOME GAS GIANTS
+binary_6 = {
+    name = "Binary 6"
+    class = "RADOM_NORMAL"
+    flags = {binary}
+    usage = misc_system_init
+    usage_odds = 20
+    planet = {
+        class = star
+        orbit_distance = {min = 15 max = 20}
+    }
+    planet = {
+        class = star
+        orbit_distance = 0
+        orbit_angle = 180
+    }
+    planet = {
+        count = {min = 0 max = 2}
+        name = ""
+        class = star
+        orbit_distance = {min = 5 max = 15}
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 10 max = 25}
+    }
+    planet = {
+        count = {min = 0 max = 2}
+        name = ""
+        class = GAS_GIANT
+        orbit_distance = {min = 10 max = 20}
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 25 max = 40}
+        has_ring = yes
+        moon = {
+            count = {min = 0 max = 3}
+            class = star
+            orbit_distance = {min = 4 max = 6}
+            orbit_angle = {min = 0 max = 360}
+            size = {min = 7 max = 15}
+        }
+    }
+    planet = {
+        count = {min = 0 max = 2}
+        name = ""
+        class = star
+        orbit_distance = {min = 5 max = 15}
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 10 max = 25}
+    }
+    planet = {
+        count = {min = 0 max = 2}
+        name = ""
+        class = GAS_GIANT
+        orbit_distance = {min = 10 max = 20}
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 25 max = 40}
+        has_ring = yes
+        moon = {
+            count = {min = 0 max = 3}
+            class = star
+            orbit_distance = {min = 4 max = 6}
+            orbit_angle = {min = 0 max = 360}
+            size = {min = 7 max = 15}
+        }
+    }
+}
+
+# ------------------------------------------------------ SPECIAL SYSTEMS ---------
+
+#SYSTEM WITH A BUNCH OF EXPLODED PLANETS
+shard_system = {
+    name = "DESTROYED SYSTEM"
+    class = "RADOM_NORMAL"
+    flags = {destroyed}
+    usage = misc_system_init
+    usage_odds = 3
+    planet = {
+        class = star
+        orbit_distance = 0
+    }
+    planet = {
+        count = 1
+        name = ""
+        class = star
+        orbit_distance = {min = 15 max = 20}
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 3 max = 5}
+        moon = {
+            count = {min = 3 max = 6}
+            class = star
+            orbit_distance = {min = 1 max = 2}
+            orbit_angle = {min = 0 max = 360}
+            size = {min = 3 max = 5}
+        }
+    }
+    planet = {
+        count = {min = 5 max = 14}
+        name = ""
+        class = star
+        orbit_distance = {min = 3 max = 5}
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 3 max = 5}
+        moon = {
+            count = {min = 3 max = 6}
+            class = star
+            orbit_distance = {min = 1 max = 2}
+            orbit_angle = {min = 0 max = 360}
+            size = {min = 3 max = 5}
+        }
+    }
+}
+
+#SYSTEM WITH A LARGE NUMBER OF HABITABLE PLANETS
+
+oasis_system = {
+    name = "OASIS"
+    class = "RANDOM_NORMAL"
+    flags = {oasis, habitable}
+    usage = misc_system_init
+    usage_odds = 3
+    planet = {
+        class = star
+        orbit_distance = 0
+    }
+    planet = {
+        count = {min = 4 max = 6}
+        name = ""
+        class = random_habitable
+        orbit_distance = {min = 10 max = 20}
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 10 max = 25}
+    }
+}
+
+#SYSTEM WITH A BLACK HOLE IN THE CENTER AND A STAR ROTATING AROUND IT <--- not done
+
+black_center = {
+    name = "OASIS"
+    class = "BLACK HOLE"
+    flags = {blackhole}
+    usage = misc_system_init
+    usage_odds = 3
+    planet = {
+        class = star
+        orbit_distance = 0
+    }
+    planet = {
+        class = RANDOM_STAR
+        orbit_distance = 40
+    }
+    planet = {
+        count = {min = 0 max = 2}
+        name = ""
+        class = random_non_colonizable
+        orbit_distance = {min = 10 max = 15}
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 8 max = 25}
+    }
+    planet = {
+        count = {min = 0 max = 1}
+        name = ""
+        class = random_colonizable
+        orbit_distance = {min = 10 max = 15}
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 8 max = 25}
+    }
+    planet = {
+        count = {min = 0 max = 1}
+        name = ""
+        class = random_non_colonizable
+        orbit_distance = {min = 10 max = 15}
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 8 max = 25}
+    }
+    planet = {
+        count = {min = 0 max = 1}
+        name = ""
+        class = random_colonizable
+        orbit_distance = {min = 10 max = 15}
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 8 max = 25}
+    }
+}
+
+#  ------------------------------------------------------ START SYSTEMS ---------
+
+# ------------------------------------------------------ EVENT SYSTEMS ---------
+
+#DESTROYED PLANET SECTOR TRIGGER
+nuked_system1 = {
+    name = "nuked 1"
+    class = "RANDOM_NORMAL"
+    flags = {nuked}
+    usage = misc_system_init
+    usage_odds = 2
+    planet = {
+        class = star
+        orbit_distance = 0
+    }
+    planet = {
+        count = 1
+        name = ""
+        class = pc_nuked
+        orbit_distance = {min = 15 max = 20}
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 3 max = 5}
+        moon = {
+            count = {min = 3 max = 6}
+            class = pc_nuked
+            orbit_distance = {min = 1 max = 2}
+            orbit_angle = {min = 0 max = 360}
+            size = {min = 3 max = 5}
+        }
+    }
+    planet = {
+        count = {min = 5 max = 14}
+        name = ""
+        class = pc_nuked
+        orbit_distance = {min = 3 max = 5}
+        orbit_angle = {min = 0 max = 360}
+        size = {min = 3 max = 5}
+        moon = {
+            count = {min = 3 max = 6}
+            class = pc_nuked
+            orbit_distance = {min = 1 max = 2}
+            orbit_angle = {min = 0 max = 360}
+            size = {min = 3 max = 5}
+        }
+    }
+    
+    neighbor_system = {
+		distance = { min = 10 max = 100 }
+		initializer = "nuked_system1"
+	}
+    
+    neighbor_system = {
+		distance = { min = 10 max = 100 }
+		initializer = "nuked_system1"
+	}
+    
+    neighbor_system = {
+		distance = { min = 10 max = 100 }
+		initializer = "nuked_system1"
+	}
+    
+}

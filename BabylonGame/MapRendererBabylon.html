@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+    <title>Babylon Game</title>
+    <!--- link to the last version of babylon --->
+    <style>
+        html, body {
+            overflow: hidden;
+            width   : 100%;
+            height  : 100%;
+            margin  : 0;
+            padding : 0;
+        }
+
+        #renderCanvas {
+            width   : 100%;
+            height  : 100%;
+            touch-action: none;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="renderCanvas"></canvas>
+    
+    <script type="text/javascript" src="TectonicsSimulatorBabylon/utilities.js"></script>
+    <script type="text/javascript" src="TectonicsSimulatorBabylon/worldGen.js"></script>
+    <script type="text/javascript" src="TectonicsSimulatorBabylon/plateGen.js"></script>
+    <script type="text/javascript" src="TectonicsSimulatorBabylon/tectonicsSimulator.js"></script>
+    <script src="babylon/dist/babylon.2.3.core.js"></script>
+    <script src="TectonicsSimulatorBabylon/MapRendererBabylon.js"></script>
+</body>
+</html>
