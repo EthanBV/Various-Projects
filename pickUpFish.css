@@ -1,0 +1,68 @@
+#screen{
+  top:11%;
+  margin:0px;
+  width:78%;
+  position:absolute;
+  height:83%;
+  background-color:black;
+  color:lime;
+  font-family:mono;
+  font-weight:bold;
+  padding:1%;
+  display:inline-block;
+  overflow:auto;
+  left:0%;
+  font-size:1em;
+}
+input{
+  outline: none;
+  width:98%;
+  height:1%;
+  margin:10px;
+  position:absolute;
+  top:95%;
+  left:0px;
+  margin:0px;
+  padding:1%;
+  background-color:green;
+  color:lime;
+  border:none;
+  font-weight:900;
+  font-family:mono;
+  font-size:1em;
+}
+#inventory{
+  padding:1%;
+  top:11%;
+  margin:0px;
+  left:80%;
+  width:18%;
+  position:absolute;
+  height:83%;
+  background-color:lime;
+  color:black;
+  font-family:mono;
+  font-weight:bold;
+  font-size:1em;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+#title{
+  padding:1%;
+  top:0%;
+  margin:0px;
+  left:0%;
+  width:98%;
+  position:absolute;
+  height:10%;
+  background-color:green;
+  color:lime;
+  font-family:mono;
+  font-weight:bold;
+  font-size:300%;
+  text-align:center;
+}
+body{
+  background-color:gray;
+}
